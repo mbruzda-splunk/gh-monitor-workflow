@@ -3,12 +3,12 @@ name: gh-monitor
 on:
   workflow_call:
     inputs:
-      fail:
+      fail_on_error:
         default: false
-      
     secrets:
       GH_TOKEN:
-        description: Github token        required: true
+        description: Github token        
+        required: true
 
 
 permissions:
